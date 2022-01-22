@@ -23,6 +23,19 @@ public class ItemCombinationData
         }
         return true;
     }
+    public List<int> HasRequireItemIdx(List<string> items)
+    {
+        List<int> temp = new List<int>();
+
+        for(int i = 0; i < items.Count; i++)
+        {
+            if (requireItem.Contains(items[i]))
+            {
+                temp.Add(i);
+            }
+        }
+        return temp;
+    }
 }
 public class ItemManager : SerializedMonoBehaviour
 {

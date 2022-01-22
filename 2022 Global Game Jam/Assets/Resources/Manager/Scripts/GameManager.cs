@@ -19,5 +19,6 @@ public class GameManager : MonoBehaviour
     //    }
     //}
 
+    public static int nowStage = 1;
     public static bool eventRunning = false;
 }
