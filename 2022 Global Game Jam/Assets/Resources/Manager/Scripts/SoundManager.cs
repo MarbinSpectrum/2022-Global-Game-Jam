@@ -31,7 +31,7 @@ public class SoundManager : SerializedMonoBehaviour
     [SerializeField] [Range(0, 1)] private float seVolume;
     [SerializeField] [Range(0, 1)] private float bgmVolume;
     [SerializeField] AudioSource seSource;
-    const int MAX_BGM_SOURCE = 2;
+    const int MAX_BGM_SOURCE = 3;
     [SerializeField] AudioSource[] bgmSource = new AudioSource[MAX_BGM_SOURCE];
     IEnumerator corEvent;
 

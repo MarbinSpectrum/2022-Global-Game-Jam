@@ -105,7 +105,7 @@ public class Inventory : SerializedMonoBehaviour
 
         ItemCombination();
 
-        UpdateImage();
+        SortITemList();
     }
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -162,7 +162,7 @@ public class Inventory : SerializedMonoBehaviour
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     /// : 아이템 조합
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-    private void ItemCombination()
+    private bool ItemCombination()
     {
         List<ItemCombinationData> combinationData = ItemManager.Instance.itemCombinationDatas;
         List<string> itemIds = new List<string>();
@@ -175,14 +175,21 @@ public class Inventory : SerializedMonoBehaviour
         for(int i = 0; i < combinationData.Count; i++)
         {
             if(combinationData[i].HasRequireItems(itemIds))
-            { 
-                foreach(string removeItemId in combinationData[i].requireItem)
+            {
+                List<int> idx = combinationData[i].HasRequireItemIdx(itemIds);
+                for(int j = 0; j < idx.Count; j++)
                 {
-                    RemoveItem(removeItemId);
+                    itemIds[j] = "None";
                 }
-                addItem(combinationData[i].returnItemId);
-                return;
+                itemIds[0] = combinationData[i].returnItemId;
+                for (int j = 0; j < idx.Count; j++)
+                {
+                    itemList[j].itemId = itemIds[j];
+                }
+                return true;
             }
         }
+
+        return false;
     }
 }
