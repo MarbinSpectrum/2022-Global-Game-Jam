@@ -8,6 +8,7 @@ public class Erase : MonoBehaviour
     [SerializeField] private GameObject removePoint;
     [SerializeField] private string itemId;
     [SerializeField] private GameObject onoffObj;
+    [SerializeField] private int maxPoint = 200;
     private List<GameObject> pointList = new List<GameObject>();
     public bool CanSet(Vector2 pos)
     {
@@ -33,7 +34,7 @@ public class Erase : MonoBehaviour
 
     public void RemoveArea()
     {
-        if (pointList.Count < 240)
+        if (pointList.Count < maxPoint)
         {
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -44,10 +45,11 @@ public class Erase : MonoBehaviour
                 pointList.Add(obj);
             }
         }    
-        else if (pointList.Count == 220)
+        else if (pointList.Count == maxPoint)
         {
             onoffObj.SetActive(true);
             Inventory.AddItem(itemId);
+            GameManager.eventRunning = false;
         }
     }
 }

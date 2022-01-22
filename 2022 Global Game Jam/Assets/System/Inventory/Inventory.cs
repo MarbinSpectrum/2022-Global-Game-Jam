@@ -64,7 +64,7 @@ public class Inventory : SerializedMonoBehaviour
         List<string> tempItemList = new List<string>();
         itemList.ForEach(x =>
         {
-            if(x.itemId != "None")
+            if(x.itemId != "None" && string.IsNullOrEmpty(x.itemId) == false)
             {
                 tempItemList.Add(x.itemId);
             }
@@ -87,10 +87,17 @@ public class Inventory : SerializedMonoBehaviour
     {
         itemList.ForEach(x =>
         {
-            if (x.itemId != "None")
+            if (x.itemId != "None" && string.IsNullOrEmpty(x.itemId) == false)
             {
                 x.itemImage.color = new Color(1, 1, 1, 1);
-                x.itemImage.sprite = ItemManager.GetSprite(x.itemId);
+                if (x.itemId == "musicsheet" && DayOnOffSystem.nowState == DayState.NIGHT)
+                {
+                    x.itemImage.sprite = ItemManager.GetSprite("musicsheetoff");
+                }
+                else
+                {
+                    x.itemImage.sprite = ItemManager.GetSprite(x.itemId);
+                }
             }
             else
             {
@@ -109,7 +116,7 @@ public class Inventory : SerializedMonoBehaviour
         //실질적으로 추가하는 부분
         for(int i = 0; i < itemList.Count; i++)
         {
-            if (itemList[i].itemId == "None")
+            if (itemList[i].itemId == "None" || string.IsNullOrEmpty(itemList[i].itemId))
             {
                 itemList[i].itemId = itemId;
                 break;

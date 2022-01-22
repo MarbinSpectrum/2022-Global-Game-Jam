@@ -308,6 +308,7 @@ GameObject:
   - component: {fileID: 62717894}
   - component: {fileID: 62717893}
   - component: {fileID: 62717892}
+  - component: {fileID: 62717895}
   m_Layer: 0
   m_Name: antenna
   m_TagString: Untagged
@@ -428,6 +429,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &62717895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62717890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38bcf6e29e9ae6439dd76347b7898d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  seName: se_get
+  destroyThis: 1
 --- !u!1 &159457981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,6 +1991,7 @@ GameObject:
   - component: {fileID: 1109004204}
   - component: {fileID: 1109004203}
   - component: {fileID: 1109004206}
+  - component: {fileID: 1109004207}
   m_Layer: 0
   m_Name: 2
   m_TagString: Untagged
@@ -2103,6 +2128,29 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &1109004207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109004201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38bcf6e29e9ae6439dd76347b7898d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  seName: se_get
+  destroyThis: 1
 --- !u!1 &1193057316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3466,6 +3514,7 @@ GameObject:
   - component: {fileID: 1875402379}
   - component: {fileID: 1875402382}
   - component: {fileID: 1875402381}
+  - component: {fileID: 1875402383}
   m_Layer: 0
   m_Name: brokenradio
   m_TagString: Untagged
@@ -3586,6 +3635,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5629745, y: 1.8261395}
   m_EdgeRadius: 0
+--- !u!114 &1875402383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875402378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38bcf6e29e9ae6439dd76347b7898d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  seName: se_get
+  destroyThis: 1
 --- !u!1 &1967627991
 GameObject:
   m_ObjectHideFlags: 0

@@ -320,6 +320,15 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 151ab2bf281f0ec4581b457cd14456e0, type: 3}
     - {fileID: 8300000, guid: fbf443fa6be0f924787d83d008e46cc1, type: 3}
     - {fileID: 8300000, guid: 437d52a561c27e54c9d1c386198f3714, type: 3}
+    - {fileID: 8300000, guid: ec0159107ec9fa742b0395a441b6104b, type: 3}
+    - {fileID: 8300000, guid: 77b62743e0524fe4d9e7fca7b4824a1e, type: 3}
+    - {fileID: 8300000, guid: 46ec8e1cf1dde864ca67203c6966cfb2, type: 3}
+    - {fileID: 8300000, guid: ee8dfbd1a7a0698449014794b0a689f4, type: 3}
+    - {fileID: 8300000, guid: 6f49097c9a09ed443ba0c8a71eef9572, type: 3}
+    - {fileID: 8300000, guid: 8756a6efcd4564944b4d0817a94a327e, type: 3}
+    - {fileID: 8300000, guid: 9726a2362c72ce842b8084f663294b3a, type: 3}
+    - {fileID: 8300000, guid: e8e18eb5476fcd24bbb1105d9c4efdad, type: 3}
+    - {fileID: 8300000, guid: 27fdacd0df9cd2540824e42afbcf6f15, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -338,7 +347,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 15
+      Data: 24
     - Name: 
       Entry: 7
       Data: 
@@ -516,6 +525,114 @@ MonoBehaviour:
     - Name: $v
       Entry: 10
       Data: 14
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: se_key_A
+    - Name: $v
+      Entry: 10
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: se_key_B
+    - Name: $v
+      Entry: 10
+      Data: 16
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: se_key_D
+    - Name: $v
+      Entry: 10
+      Data: 17
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: se_key_E
+    - Name: $v
+      Entry: 10
+      Data: 18
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: se_key_O
+    - Name: $v
+      Entry: 10
+      Data: 19
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ghostvoice2_3
+    - Name: $v
+      Entry: 10
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: se_pic
+    - Name: $v
+      Entry: 10
+      Data: 21
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: se_get
+    - Name: $v
+      Entry: 10
+      Data: 22
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: se_book
+    - Name: $v
+      Entry: 10
+      Data: 23
     - Name: 
       Entry: 8
       Data: 
