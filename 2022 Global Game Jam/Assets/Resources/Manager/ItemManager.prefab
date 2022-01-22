@@ -47,10 +47,11 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: 8603e83f2f267604b88267ef188d1d3e, type: 3}
-    - {fileID: 21300000, guid: 3f72fb13869458b4bb61741d4fc46eb6, type: 3}
-    - {fileID: 21300000, guid: cd0eb23cc4e77884399fa98a9b61e2b4, type: 3}
-    - {fileID: 21300000, guid: a6d8b2a2cc72a7c439f5caa01d21d85a, type: 3}
+    - {fileID: 21300000, guid: 2d85ea50361358c4b965beb24eac6d3c, type: 3}
+    - {fileID: 21300000, guid: f91e2354fc36f684f9cf857a14920801, type: 3}
+    - {fileID: 21300000, guid: 95fdf94350601c0489b4896f7550bc5e, type: 3}
+    - {fileID: 21300000, guid: f9751c6356c111a4fb5603def74a47d2, type: 3}
+    - {fileID: 21300000, guid: 91131d793ac07074da0da357a03ae782, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -69,13 +70,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 5
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 1
-      Data: radio
+      Data: brokenradio
     - Name: $v
       Entry: 10
       Data: 0
@@ -87,7 +88,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: lighter
+      Data: fixedradio
     - Name: $v
       Entry: 10
       Data: 1
@@ -99,7 +100,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: brench
+      Data: nobatteryradio
     - Name: $v
       Entry: 10
       Data: 2
@@ -111,10 +112,22 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: fixedRadio
+      Data: antenna
     - Name: $v
       Entry: 10
       Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: headpain
+    - Name: $v
+      Entry: 10
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
@@ -139,16 +152,13 @@ MonoBehaviour:
       Data: 4|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 1
-      Data: radio
+      Data: brokenradio
     - Name: 
       Entry: 1
-      Data: brench
-    - Name: 
-      Entry: 1
-      Data: lighter
+      Data: antenna
     - Name: 
       Entry: 13
       Data: 
@@ -157,7 +167,7 @@ MonoBehaviour:
       Data: 
     - Name: returnItemId
       Entry: 1
-      Data: fixedRadio
+      Data: fixedradio
     - Name: 
       Entry: 8
       Data: 
