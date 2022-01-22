@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class TalkGhost : ClickObject
+public class TalkGhost01 : ClickObject
 {
     [SerializeField] private PlayableDirector talkAnimation;
     [SerializeField] private PlayableDirector solveTalkAnimation;
