@@ -318,6 +318,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3d15060a806dec94e87fa85397010064, type: 3}
     - {fileID: 8300000, guid: a3e85df02bd163642af0be5bcf6efd1a, type: 3}
     - {fileID: 8300000, guid: 151ab2bf281f0ec4581b457cd14456e0, type: 3}
+    - {fileID: 8300000, guid: fbf443fa6be0f924787d83d008e46cc1, type: 3}
+    - {fileID: 8300000, guid: 437d52a561c27e54c9d1c386198f3714, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -336,7 +338,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 13
+      Data: 15
     - Name: 
       Entry: 7
       Data: 
@@ -490,6 +492,30 @@ MonoBehaviour:
     - Name: $v
       Entry: 10
       Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ghostvoice2_1
+    - Name: $v
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ghostvoice2_2
+    - Name: $v
+      Entry: 10
+      Data: 14
     - Name: 
       Entry: 8
       Data: 

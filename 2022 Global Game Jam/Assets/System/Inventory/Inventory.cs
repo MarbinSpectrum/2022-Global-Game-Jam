@@ -17,30 +17,43 @@ public class ItemData
 
 public class Inventory : SerializedMonoBehaviour
 {
-    public static Inventory instance;
-    private List<ItemData> itemList = new List<ItemData>();
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    private void Awake()
+    private static Inventory instance;
+    public static Inventory Instance
     {
-        instance = this;
-        for(int i = 0; i < transform.childCount; i++)
+        get
         {
-            itemList.Add(new ItemData("None", transform.GetChild(i).GetComponent<Image>()));
+            if (instance == null)
+            {
+                //NULL값인 경우 데이터를 매니저를 가져온다.
+                GameObject InventoryObj = Instantiate(Resources.Load("Inventory") as GameObject);
+                instance = InventoryObj.GetComponent<Inventory>();
+                DontDestroyOnLoad(instance.gameObject);
+
+                instance.Init();
+            }
+            return instance;
         }
     }
 
-    private void Start()
+    private List<ItemData> itemList = new List<ItemData>();
+    public Dictionary<string, InventoryItemEvent> itemEvent = new Dictionary<string, InventoryItemEvent>();
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    private void Init()
     {
-        UpdateImage(); 
+        for(int i = 0; i < transform.GetChild(0).childCount; i++)
+        {
+            itemList.Add(new ItemData("None", transform.GetChild(0).GetChild(i).GetComponent<Image>()));
+        }
+        UpdateImage();
     }
 
     public static void AddItem(string itemId)
     {
-        instance.addItem(itemId);
+        Instance.addItem(itemId);
     }
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -113,7 +126,7 @@ public class Inventory : SerializedMonoBehaviour
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static bool HasItem(string itemId)
     {
-        return instance.hasItem(itemId);
+        return Instance.hasItem(itemId);
     }
     private bool hasItem(string itemId)
     {
@@ -131,7 +144,12 @@ public class Inventory : SerializedMonoBehaviour
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     /// : 아이템 제거
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-    private void RemoveItem(string itemId,bool all = false)
+
+    public static void RemoveItem(string itemId, bool all = false)
+    {
+        Instance.removeItem(itemId, all);
+    }
+    private void removeItem(string itemId,bool all = false)
     {
         for (int i = 0; i < itemList.Count; i++)
         {
@@ -151,7 +169,7 @@ public class Inventory : SerializedMonoBehaviour
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void UseItem(string itemId, bool all = false)
     {
-        instance.useItem(itemId, all);
+        Instance.useItem(itemId, all);
     }
     private void useItem(string itemId, bool all = false)
     {
@@ -179,17 +197,28 @@ public class Inventory : SerializedMonoBehaviour
                 List<int> idx = combinationData[i].HasRequireItemIdx(itemIds);
                 for(int j = 0; j < idx.Count; j++)
                 {
-                    itemIds[j] = "None";
+                    itemIds[idx[j]] = "None";
                 }
-                itemIds[0] = combinationData[i].returnItemId;
+                itemIds[idx[0]] = combinationData[i].returnItemId;
                 for (int j = 0; j < idx.Count; j++)
                 {
-                    itemList[j].itemId = itemIds[j];
+                    itemList[idx[j]].itemId = itemIds[idx[j]];
                 }
                 return true;
             }
         }
 
         return false;
+    }
+
+    public void InventoryItemClick(int idx)
+    {
+        if (GameManager.eventRunning)
+            return;
+        if(itemEvent.ContainsKey(itemList[idx].itemId))
+        {
+            InventoryItemEvent inventoryItemEvent = itemEvent[itemList[idx].itemId];
+            inventoryItemEvent.RunEvent();
+        }
     }
 }
