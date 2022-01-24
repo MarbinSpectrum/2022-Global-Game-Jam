@@ -329,6 +329,12 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 9726a2362c72ce842b8084f663294b3a, type: 3}
     - {fileID: 8300000, guid: e8e18eb5476fcd24bbb1105d9c4efdad, type: 3}
     - {fileID: 8300000, guid: 27fdacd0df9cd2540824e42afbcf6f15, type: 3}
+    - {fileID: 8300000, guid: 252988c3b3110144599246da623fc867, type: 3}
+    - {fileID: 8300000, guid: ee8c04f98bc26da4f9915f443ed6c7cf, type: 3}
+    - {fileID: 8300000, guid: 0e7adaae586d57e48a06a425b76d04db, type: 3}
+    - {fileID: 8300000, guid: 6e260cacf5ec4bf49979ae067669cd5e, type: 3}
+    - {fileID: 8300000, guid: 45c2077d35160b84da256ad79bd19d3b, type: 3}
+    - {fileID: 8300000, guid: 8413deae019c63f44b9dd2b40ffd60a5, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -347,7 +353,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 24
+      Data: 30
     - Name: 
       Entry: 7
       Data: 
@@ -485,7 +491,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: se_button_on
+      Data: se_button_off
     - Name: $v
       Entry: 10
       Data: 11
@@ -497,7 +503,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: se_button_off
+      Data: se_button_on
     - Name: $v
       Entry: 10
       Data: 12
@@ -633,6 +639,78 @@ MonoBehaviour:
     - Name: $v
       Entry: 10
       Data: 23
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ghostvoice3_a1
+    - Name: $v
+      Entry: 10
+      Data: 24
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ghostvoice3_a2
+    - Name: $v
+      Entry: 10
+      Data: 25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ghostvoice3_b1
+    - Name: $v
+      Entry: 10
+      Data: 26
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ghostvoice3_b2
+    - Name: $v
+      Entry: 10
+      Data: 27
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ghostvoice3_c1
+    - Name: $v
+      Entry: 10
+      Data: 28
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ghostvoice3_c2
+    - Name: $v
+      Entry: 10
+      Data: 29
     - Name: 
       Entry: 8
       Data: 

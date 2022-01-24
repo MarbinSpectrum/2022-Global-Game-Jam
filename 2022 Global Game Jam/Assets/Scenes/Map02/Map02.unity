@@ -910,7 +910,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &338906819
 GameObject:
@@ -2170,6 +2170,51 @@ MonoBehaviour:
     SerializationNodes: []
   seName: se_box
   destroyThis: 0
+--- !u!1 &1054699227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054699229}
+  - component: {fileID: 1054699228}
+  m_Layer: 0
+  m_Name: SetItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1054699228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054699227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c43e0c2e66002429bd8702fc4d42c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - nobatteryradio
+--- !u!4 &1054699229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054699227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0481397, y: -1.7114758, z: -1.9186846}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1079459877
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,52 +2441,6 @@ MonoBehaviour:
   seName: ghostvoice2_3
   destroyThis: 0
   eventType: 2
---- !u!1 &1180725637
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1180725639}
-  - component: {fileID: 1180725638}
-  m_Layer: 0
-  m_Name: ChangeItem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1180725638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180725637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb9a8b0798e381147ab7577784269b29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requireItem: fixedradio
-  returnItem: nobatteryradio
-  eventType: 0
---- !u!4 &1180725639
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180725637}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193057316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,7 +2547,7 @@ Transform:
   - {fileID: 810924674}
   - {fileID: 1257899345}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1204152879
 GameObject:
@@ -2994,7 +2993,7 @@ Transform:
   - {fileID: 730597530}
   - {fileID: 2102322733}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1308009564
 GameObject:
@@ -3181,6 +3180,7 @@ MonoBehaviour:
   solveTalkAnimation: {fileID: 1336097425}
   boneSolveTalkAnimation: {fileID: 76592802}
   requireItem: fixedradio
+  ghostRemove: 0
 --- !u!1 &1336097424
 GameObject:
   m_ObjectHideFlags: 0
@@ -4131,7 +4131,7 @@ RectTransform:
   - {fileID: 176251852}
   - {fileID: 12414477}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

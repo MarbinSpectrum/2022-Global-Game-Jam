@@ -152,6 +152,18 @@ public class Inventory : SerializedMonoBehaviour
     /// : 아이템 제거
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    public static void RemoveItems()
+    {
+        Instance.removeItem();
+    }
+    private void removeItem()
+    {
+        for (int i = 0; i < itemList.Count; i++)
+        {
+            itemList[i].itemId = "None";
+        }
+        UpdateImage();
+    }
     public static void RemoveItem(string itemId, bool all = false)
     {
         Instance.removeItem(itemId, all);

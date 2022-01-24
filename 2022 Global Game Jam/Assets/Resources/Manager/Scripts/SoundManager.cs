@@ -182,4 +182,23 @@ public class SoundManager : SerializedMonoBehaviour
             }
         }
     }
+
+    public static void StopBGM(int slot = 0)
+    {
+        Instance.stopBGM(slot);
+    }
+    private void stopBGM(int slot)
+    {
+        bgmSource[slot].Stop();
+    }
+
+    public static void StopAllBGM()
+    {
+        Instance.stopAllBGM();
+    }
+    private void stopAllBGM()
+    {
+        for (int i = 0; i < MAX_BGM_SOURCE; i++)
+            bgmSource[i].Stop();
+    }
 }
