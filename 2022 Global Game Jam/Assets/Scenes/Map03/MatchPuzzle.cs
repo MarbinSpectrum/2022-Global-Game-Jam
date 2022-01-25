@@ -12,12 +12,12 @@ public class MatchPuzzle : MonoBehaviour
     [SerializeField] private GameObject[] OffCandle = new GameObject[2];
     [SerializeField] private GameObject[] OnCandle = new GameObject[2];
     [SerializeField] private Transform center;
+    [SerializeField] private GameObject newWorldObj;
 
     private bool moveItems = false;
     private bool createMagicCircle = false;
     private List<Animation> DragAni = new List<Animation>();
     [HideInInspector] public bool puzzleStart = false;
-
 
     private void Awake()
     {
@@ -109,7 +109,7 @@ public class MatchPuzzle : MonoBehaviour
 
         GameManager.eventRunning = true;
         Invoke("PuzzleClearAni", 1f);
-        
+
     }
     private void PuzzleClearAni()
     {
@@ -133,10 +133,17 @@ public class MatchPuzzle : MonoBehaviour
                 check = false;
         }
 
-        if (createMagicCircle == true || check == false)
+        if (check == false)
             return;
 
-        SoundManager.StopAllBGM();
+        if(createMagicCircle == false)
+        {
+            createMagicCircle = true;
+            SoundManager.StopAllBGM();
+            newWorldObj.SetActive(true);
+        }
     }
+
+
 }
 

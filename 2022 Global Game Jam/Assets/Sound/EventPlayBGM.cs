@@ -6,6 +6,7 @@ public class EventPlayBGM : MonoBehaviour
 {
     [SerializeField] bool destroyThis = false;
     [SerializeField] int slot = 0;
+    [SerializeField] bool loop = true;
     [SerializeField] SoundEvent eventType;
     private void OnEnable()
     {
@@ -31,7 +32,7 @@ public class EventPlayBGM : MonoBehaviour
     private void RunEvent()
     {
         SoundManager.PlayBGM(slot);
-
+        SoundManager.Setloop(slot, loop);
         if (destroyThis)
         {
             Destroy(this);

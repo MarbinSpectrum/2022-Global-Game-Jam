@@ -6,6 +6,7 @@ public enum DayState
 {
     MORNING,
     NIGHT,
+    NEW_WORLD,
     NUM
 }
 

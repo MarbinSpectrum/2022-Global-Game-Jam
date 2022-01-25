@@ -201,4 +201,14 @@ public class SoundManager : SerializedMonoBehaviour
         for (int i = 0; i < MAX_BGM_SOURCE; i++)
             bgmSource[i].Stop();
     }
+
+    public static void Setloop(int slot,bool state)
+    {
+        Instance.setloop(slot, state);
+    }
+
+    private void setloop(int slot, bool state)
+    {
+        bgmSource[slot].loop = state;
+    }
 }
