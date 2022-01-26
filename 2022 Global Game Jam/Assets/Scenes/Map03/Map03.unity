@@ -7374,7 +7374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1567669194
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7413,8 +7413,6 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -4577565231854736416, guid: 548379b1a89d33844808cbf2e502b6f7, type: 2}
     value: {fileID: 1449970839}
-  - key: {fileID: -1071538189556876546, guid: 548379b1a89d33844808cbf2e502b6f7, type: 2}
-    value: {fileID: 1731969111}
   m_ExposedReferences:
     m_References: []
 --- !u!222 &1567669196
@@ -7974,10 +7972,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60acc4cd126042a4199e8db9fb8f65fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyThis: 0
+  destroyThis: 1
   bgmName: offon_ost_libertinct
   slot: 2
-  eventType: 0
+  eventType: 2
 --- !u!114 &1731969115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7992,8 +7990,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyThis: 0
   slot: 2
-  loop: 1
-  eventType: 2
+  loop: 0
+  eventType: 1
 --- !u!222 &1731969116
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8619,6 +8617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endImg: {fileID: 1054355937}
   endAnimation: {fileID: 1567669193}
+  endSound: {fileID: 1731969111}
 --- !u!222 &1871965728
 CanvasRenderer:
   m_ObjectHideFlags: 0

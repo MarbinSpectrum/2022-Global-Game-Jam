@@ -73,7 +73,6 @@ public class TalkGhost02 : ClickObject
         solveTalkAnimation.stopped -= SolveTalkAnimationStop;
         SoundManager.SetBGMValue(baseBGM, slot);
         bookItemEvent bookevent = (bookItemEvent)Inventory.Instance.itemEvent["book"];
-        bookevent.ChangePageEvent();
     }
 
     public void boneSolveEvent()

@@ -9,9 +9,8 @@ public class Ending : MonoBehaviour
 
     [SerializeField] private Image endImg;
     [SerializeField] private GameObject endAnimation;
-
+    [SerializeField] private GameObject endSound;
     private float point = 0;
-    private int ans = 0;
 
     private void Awake()
     {
@@ -22,10 +21,14 @@ public class Ending : MonoBehaviour
     {
         if (endAnimation.activeSelf)
             return;
-        point += 6;
-        ans += 2;
-        endImg.color = new Color(1, 1, 1, (float)point / 255f);
-        if(ans > 70)
+        point += 2;
+
+        if(point == 50)
+        {
+            endSound.SetActive(true);
+        }
+        endImg.color = new Color(1, 1, 1, point / 100f);
+        if(point > 70)
         {
             endAnimation.SetActive(true);
         }

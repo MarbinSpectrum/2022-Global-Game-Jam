@@ -17,14 +17,10 @@ public class BigBoneItemEvent : InventoryItemEvent
         }
         else
         {
+            passList.Clear();
             bone.SetActive(false);
             GameManager.eventRunning = false;
         }
-    }
-
-    public void OnDisable()
-    {
-        passList.Clear();
     }
 
     private List<char> passList = new List<char>();

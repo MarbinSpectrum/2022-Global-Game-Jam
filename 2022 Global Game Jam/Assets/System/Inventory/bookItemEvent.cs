@@ -19,10 +19,4 @@ public class bookItemEvent : InventoryItemEvent
             GameManager.eventRunning = false;
         }
     }
-
-    public void ChangePageEvent()
-    {
-        page[0].SetActive(false);
-        page[1].SetActive(true);
-    }
 }
