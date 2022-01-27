@@ -106,12 +106,12 @@ public class SoundManager : SerializedMonoBehaviour
         }
 
         AudioClip bgmData = sounds[bgmName];
-        if (bgmData == null)
-        {
-            //KEY에 해당하는 값이 null이다.
-            Debug.LogError(bgmName + "에 해당하는 값이 NULL입니다.");
-            return;
-        }
+        //if (bgmData == null)
+        //{
+        //    //KEY에 해당하는 값이 null이다.
+        //    Debug.LogError(bgmName + "에 해당하는 값이 NULL입니다.");
+        //    return;
+        //}
 
         bgmSource[slot].clip = bgmData;
     }
